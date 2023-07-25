@@ -3,6 +3,15 @@ import { motion } from 'framer-motion';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import { Button } from '@mui/material';
+
+const URL = {
+  linkedin: 'https://www.linkedin.com/in/aldringuasa/',
+  github: 'https://github.com/ishnoopy',
+  email: 'mailto:aldringuasa@gmail.com',
+  CV: 'https://drive.google.com/file/d/1lWDT_4Rv5iViR9dBdQzY3oo0_Q7QC3dT/view?usp=drive_link'
+}
+
 
 export default function Hero() {
   const techStack = [
@@ -63,12 +72,15 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
+                className='flex flex-col items-center'
               >
-                <div className="flex mt-8 w-full justify-center">
-                  <a href="https://www.linkedin.com/in/aldringuasa/" target='_blank'><LinkedInIcon fontSize="large" className='cursor-pointer' /></a>
-                  <a href="https://github.com/ishnoopy" target='_blank'><GitHubIcon fontSize="large" className='cursor-pointer' /></a>
-                  <a href="mailto:aldringuasa@gmail.com"><EmailIcon fontSize="large" className='cursor-pointer' /></a>
+                <Button variant="contained" color='info'><a href={URL.CV} className='nav-link no-underline text-white' target='_blank'>View CV</a></Button>
+                <div className="flex mt-2 w-full justify-center">
+                  <a href={URL.linkedin} target='_blank'><LinkedInIcon fontSize="large" className='cursor-pointer opacity-90 hover:scale-110 hover:opacity-100' /></a>
+                  <a href={URL.github} target='_blank'><GitHubIcon fontSize="large" className='cursor-pointer opacity-90 hover:scale-110 hover:opacity-100' /></a>
+                  <a href={URL.email}><EmailIcon fontSize="large" className='cursor-pointer opacity-90 hover:scale-110 hover:opacity-100' /></a>
                 </div>
+                
               </motion.div>
               
               </div>
