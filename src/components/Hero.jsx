@@ -9,7 +9,7 @@ const URL = {
   linkedin: 'https://www.linkedin.com/in/aldringuasa/',
   github: 'https://github.com/ishnoopy',
   email: 'mailto:aldringuasa@gmail.com',
-  CV: 'https://drive.google.com/file/d/1lWDT_4Rv5iViR9dBdQzY3oo0_Q7QC3dT/view?usp=drive_link'
+  CV: 'https://drive.google.com/file/d/1_D-PrNVighAATzTdx1I4o1QA75vpKKgt/view?usp=sharing'
 }
 
 
